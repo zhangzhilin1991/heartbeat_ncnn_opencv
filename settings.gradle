@@ -1,0 +1,9 @@
+rootProject.name='HeartBeat_ncnn'
+
+def opencvsdk='opencv'
+//def opencvsdk='/<path to OpenCV-android-sdk>'
+//println opencvsdk
+include ':opencv'
+project(':opencv').projectDir = new File(opencvsdk + '/sdk')
+
+include ':app'
